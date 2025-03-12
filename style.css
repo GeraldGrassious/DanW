@@ -1,0 +1,74 @@
+        
+        body {
+
+            margin:0px;
+            background-color: rgb(245, 245, 169)
+        }
+        h1 {
+            border: 5px solid rgb(103, 138, 167);
+            text-align: center;
+            font-size: 40px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(148, 195, 233);
+            margin: 0px;
+            padding:5px;
+        }
+        h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align:center;
+        }
+        header {
+            text-align: center;
+            background-color: rgb(103, 138, 167);
+            width:100%;
+            height: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-bottom: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(245, 245, 169);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        div{
+            border: 5px solid rgb(103, 138, 167);
+            margin-top:30px;
+            height: 200px;
+            width: 85%;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:rgb(148, 195, 233);
+        }
+        p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align:center;
+        }
+        img {
+            display:block;
+            width: 90%;
+            margin-left:auto;
+            margin-right: auto;
+        }
+        video {
+            display: block;
+            height: 90%;
+            width: 90%;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        .imageholder {
+            width: 25%; 
+            height: 90%; 
+            padding-bottom: 30px;
+        }
+        .videoholder {
+            padding: 1%;
+            height: 90%;
+            width:90%;
+            margin-bottom: 20px;
+            padding-bottom: 3%;
+        }
