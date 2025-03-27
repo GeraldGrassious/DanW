@@ -621,7 +621,7 @@ function revtwisteds(){
         } 
     }
 
-    alert("There will be " + twisted + " twisteds between floor " + floors[0] + " and " + floors[1])
+    alert("There will be " + twisted + " twisteds between floor " + floors[0] + " and " + floors[1] + " if there are " + [player] + " players")
     
 }
 
