@@ -2,7 +2,7 @@
 
 function twisteds(){
     let player = prompt("How many Alive players on the floor?");
-    if (isNaN(player) === false && player !== null){
+    if (isNaN(player) === false && player !== null && player !== ""){
         if (player % 1 !== 0){
             alert("I see you're trying to break my program Shrimpo, well let me help you, I'll break it for you.");
             window.location.href = "https://www.bing.com/search?pglt=41&q=local+therapists+office+near+me+for+shrimps+with+anger+issues&cvid=a29b55b647a746b18c21f6988256656e&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCTE3NzM1ajBqMagCALACAA&FORM=ANNTA1&PC=U531";
@@ -11,6 +11,9 @@ function twisteds(){
         else{
             player = parseInt(player);
         }
+    }
+    else if (player === null || player === ""){
+        return;
     }
     else{
         alert("Oh Shrimpo, master of literature, rookie at basic reading. Look man, if you can't type a simple whole number, you don't deserve to even use this program");
@@ -22,7 +25,7 @@ function twisteds(){
         return;
     }
     let floor = prompt("What floor number do you want to calculate for?");
-    if (isNaN(floor) === false && floor !== null){
+    if (isNaN(floor) === false && floor !== null && floor !== ""){
         if (floor % 1 !== 0){
             alert("I see you're trying to break my program Shrimpo, well let me help you, I'll break it for you.");
             window.location.href = "https://www.bing.com/search?pglt=41&q=local+therapists+office+near+me+for+shrimps+with+anger+issues&cvid=a29b55b647a746b18c21f6988256656e&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCTE3NzM1ajBqMagCALACAA&FORM=ANNTA1&PC=U531";
@@ -31,6 +34,9 @@ function twisteds(){
         else{
             floor = parseInt(floor);
         }
+    }
+    else if (floor === null || floor === ""){
+        return;
     }
     else{
         alert("Oh Shrimpo, master of literature, rookie at basic reading. Look man, if you can't type a simple whole number, you don't deserve to even use this program");
@@ -251,7 +257,7 @@ function twisteds(){
 }
 function revtwisteds(){
     let player = prompt("How many Alive players on the floor?");
-    if (isNaN(player) === false && player !== null){
+    if (isNaN(player) === false && player !== null && player !== ""){
         if (player % 1 !== 0){
             alert("I see you're trying to break my program Shrimpo, well let me help you, I'll break it for you.");
             window.location.href = "https://www.bing.com/search?pglt=41&q=local+therapists+office+near+me+for+shrimps+with+anger+issues&cvid=a29b55b647a746b18c21f6988256656e&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCTE3NzM1ajBqMagCALACAA&FORM=ANNTA1&PC=U531";
@@ -260,6 +266,9 @@ function revtwisteds(){
         else{
             player = parseInt(player);
         }
+    }
+    else if (player === null || player === ""){
+        return;
     }
     else{
         alert("Oh Shrimpo, master of literature, rookie at basic reading. Look man, if you can't type a simple whole number, you don't deserve to even use this program");
@@ -271,7 +280,7 @@ function revtwisteds(){
         return;
     }
     let twisted = prompt("What amount of Twisteds do you want to calculate for?");
-    if (isNaN(twisted) === false && twisted !== null){
+    if (isNaN(twisted) === false && twisted !== null && twisted !== ""){
         if (twisted % 1 !== 0){
             alert("I see you're trying to break my program Shrimpo, well let me help you, I'll break it for you.");
             window.location.href = "https://www.bing.com/search?pglt=41&q=local+therapists+office+near+me+for+shrimps+with+anger+issues&cvid=a29b55b647a746b18c21f6988256656e&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCTE3NzM1ajBqMagCALACAA&FORM=ANNTA1&PC=U531";
@@ -280,6 +289,9 @@ function revtwisteds(){
         else{
             twisted = parseInt(twisted);
         }
+    }
+    else if (twisted === null || twisted === ""){
+        return;
     }
     else{
         alert("Oh Shrimpo, master of literature, rookie at basic reading. Look man, if you can't type a simple whole number, you don't deserve to even use this program");
@@ -620,8 +632,6 @@ function revtwisteds(){
             floors.push("above");
         } 
     }
-
     alert("There will be " + twisted + " twisteds between floor " + floors[0] + " and " + floors[1] + " if there are " + [player] + " players")
-    
 }
 
