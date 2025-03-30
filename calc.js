@@ -634,4 +634,55 @@ function revtwisteds(){
     }
     alert("There will be " + twisted + " twisteds between floor " + floors[0] + " and " + floors[1] + " if there are " + [player] + " players")
 }
+function toons(){
+    
+    info = [//Normal toons
+         ["Boxten","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 3 stars\nStamina: 3 stars\nStealth: 3 stars\nExtraction Speed: 3 stars\nWindup(Passive): This Toon gains 6% more Extraction Speed for every alive Toon in the round. Maxes at 48%.\n"],
+         ["Brightney","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 3 stars\nStamina: 4 stars\nStealth: 1 stars\nExtraction Speed: 4 stars\nNight Light(Active): This Toon can shine lights on Twisteds to make them visible during Blackouts for 8 seconds. Has a Cooldown of 45.\n"],
+         ["Connie","Health: 3 stars\nSkill Check: 2 stars\nMovement Speed: 1 stars\nStamina: 3 stars\nStealth: 5 stars\nExtraction Speed: 4 stars\nHaunting Escape(Active): This Toon uses her ability to become invisible for 5 seconds. Twisteds will not be able to notice her during this time, unless she is up against a Lethal Twisted, which will still see her. Has a cooldown of 50.\n"],
+         ["Cosmo","Health: 3 stars\nSkill Check: 1 stars\nMovement Speed: 3 stars\nStamina: 4 stars\nStealth: 4 stars\nExtraction Speed: 3 stars\nSharing is Caring(Active): This Toon can give one of his own Hearts to heal a targeted Toon. Cannot be used when at 1 Heart. Has a Cooldown of 60.\n"],
+         ["Finn","Health: 3 stars\nSkill Check: 4 stars\nMovement Speed: 3 stars\nStamina: 2 stars\nStealth: 3 stars\nExtraction Speed: 3 stars\nReel In(Passive):This Toon gains a 33% Movement Speed boost when any Machine is completed for 10 seconds.\n"],
+         ["Flutter","Health: 3 stars\nSkill Check: 2 stars\nMovement Speed: 4 stars\nStamina: 4 stars\nStealth: 3 stars\nExtraction Speed: 2 stars\nFloaty Dash(Active): This Toon can dash forward, drastically increasing her Movement Speed for 0.75 seconds. Has a cooldown of 45 seconds.\n"],
+         ["Gigi","Health: 3 stars\nSkill Check: 5 stars\nMovement Speed: 3 stars\nStamina: 1 stars\nStealth: 3 stars\nExtraction Speed: 3 stars\nSurprise!(Active): This Toon can grant herself a random item from any Tier (Dandy's Shop items included). Has a Cooldown of 80.\n"],
+         ["Glisten","Health: 3 stars\nSkill Check: 2 stars\nMovement Speed: 3 stars\nStamina: 3 stars\nStealth: 2 stars\nExtraction Speed: 5 stars\nReflection(Active): This Toon can travel through a mirror, instantly teleporting to a targeted Toon regardless of line of sight and can inflict Confused III on himself. Has a cooldown of 100.\n"],
+         ["Goob","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 4 stars\nStamina: 4 stars\nStealth: 2 stars\nExtraction Speed: 2 stars\nHug!(Active): This Toon can pull other Toons towards his position. Needs direct line of sight. 30 second cooldown.\n"],
+         ["Looey","Health: 3 stars\nSkill Check: 4 stars\nMovement Speed: 3 stars\nStamina: 3 stars\nStealth: 2 stars\nExtraction Speed: 3 stars\nHeart of Helium(Passive): For each missing heart this Toon has, they gain 20% more walk and run speed mulitplier. At one heart this Toon gains 20% more speed multiplier. His speed is reduced back when healed.\n"],
+         ["Poppy","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 3 stars\nStamina: 3 stars\nStealth: 3 stars\nExtraction Speed: 3 stars\nPanic Pop(Passive): This Toon receives a 50% Speed boost for 3 seconds when attacked.\n"],
+         ["Razzle & Dazzle","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 3 stars\nStamina: 3 stars\nStealth: 3 stars\nExtraction Speed: 3 stars\nComedy/Tragedy(Passive): This Toon swaps between Movement Speed on odd numbered Floors, and Extraction Speed on even numbered Floors.\n"],
+         ["Rodger","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 2 stars\nStamina: 3 stars\nStealth: 3 stars\nExtraction Speed: 4 stars\nDetective(Passive) This Toon gains twice the amount of Research from Capsules and encountering Twisteds.\n"],
+         ["Scraps","Health: 3 stars\nSkill Check: 2 stars\nMovement Speed: 2 stars\nStamina: 5 stars\nStealth: 3 stars\nExtraction Speed: 3 stars\nCrafty Grapple(Active): This Toon can pull herself towards another Toon's targeted position. Needs direct line of sight (LoS); Has invincibility frames during the animation. 25 Second Cooldown.\n"],
+         ["Shrimpo","Health: 3 stars\nSkill Check: 1 stars\nMovement Speed: 1 stars\nStamina: 1 stars\nStealth: 1 stars\nExtraction Speed: 1 stars\nBully(Passive): Stealth is drastically lower than any other Toon. Only play this Toon if you are looking for a challenge.\n"],
+         ["Teagan","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 3 stars\nStamina: 4 stars\nStealth: 2 stars\nExtraction Speed: 3 stars\nTea Time(Active): This Toon can spend 100 Tapes to heal themselves by 1 Heart. Has a Cooldown of 100.\n"],
+         ["Tisha","Health: 3 stars\nSkill Check: 4 stars\nMovement Speed: 4 stars\nStamina: 2 stars\nStealth: 3 stars\nExtraction Speed: 2 stars\nTidy Up!(Active): This Toon can create a pulse that increases the movement speed of Toons around her by 25% for 5 seconds. Has a cooldown of 50.\n"],
+         ["Toodles","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 3 stars\nStamina: 3 stars\nStealth: 4 stars\nExtraction Speed: 2 stars\nBeginner's Luck(Active): This Toon can roll for a 15% boost to a random Stat that lasts for 10 seconds. Has a cooldown of 25.\n"],
+         ["Yatta","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 4 stars\nStamina: 1 stars\nStealth: 2 stars\nExtraction Speed: 5 stars\nPiñata Party(Passive): This Toon drops 2 random candy items after completing a machine, and 4 random candy items when injured.\n"],
+         //Mains + event Mains
+         ["Astro","Health: 2 stars\nSkill Check: 2 stars\nMovement Speed: 3 stars\nStamina: 3 stars\nStealth: 5 stars\nExtraction Speed: 3 stars\nNap Time(Active): This Toon can create a pulse that fully restores the Stamina of the Toons around him. Has a cooldown of 75.\nWell Rested(Passive): This Toon regenerates Stamina 50% faster, and can see Toons below 50% Stamina around the map.\n"],
+         ["Pebble","Health: 2 stars\nSkill Check:3 stars\nMovement Speed: 5 stars\nStamina: 4 stars\nStealth: 3 stars\nExtraction Speed: 1 stars\nSpeak!(Active): This Toon can bark loudly, drastically decreasing Stealth to a value of -40 and alerting any Twisteds nearby to his location. Has a cooldown of 60.\nFetch!(Passive): This Toon can sniff out items, causing them to be highlighted when in the Toon's vicinity.\n"],
+         ["Shelly","Health: 2 stars\nSkill Check: 5 stars\nMovement Speed: 3 stars\nStamina: 2 stars\nStealth: 3 stars\nExtraction Speed: 3 stars\nInspiration(Active): This Toon can boost the Extraction Speed of a selected Toon by 75% for 15 seconds. Has a cooldown of 60.\nProblem solver(Passive): This Toon gains a 25% Movement Speed boost when any Machine is completed for 10 seconds.\n"],
+         ["Sprout","Health: 2 stars\nSkill Check: 2 stars\nMovement Speed: 4 stars\nStamina: 5 stars\nStealth: 3 stars\nExtraction Speed: 2 stars\nBaked Sweets(Active): This Toon can heal a targeted Toon by 1 Heart at the cost of 100 Tapes. For each extra Sprout, the cost increases by 50 Tapes and the Cooldown increases by 30. Has a cooldown of 100.\nOverprotective(Passive): This Toon can see where all the other alive Toons are, along with their current Health status.\n"],
+         ["Vee","Health: 2 stars\nSkill Check: 4 stars\nMovement Speed: 2 stars\nStamina: 3 stars\nStealth: 2 stars\nExtraction Speed: 5 stars\nMic Check(Active): This Toon can highlight all Twisteds on the Floor for 5 seconds. Has a Cooldown of 60.\nCamera Hijack(Passive): This Toon will have the nearest uncompleted Machine highlighted for them.\n"],
+         ["Bobette","Health: 2 stars\nSkill Check: 4 stars\nMovement Speed: 3 stars\nStamina: 5 stars\nStealth: 2 stars\nExtraction Speed: 2 stars\nPrecious Packaging(Active): This Toon can duck and cover herself into a gift box for 8 seconds, in which she is invincible yet unable to move. Has a Cooldown of 90.\nFestive Aura(Passive): The festive aura of this Toon passively gives those around her 50% faster stamina regeneration.\n"],
+        //Event toons without main (Bobette)
+         ["Coal","Health: 3 stars\nSkill Check: 2 stars\nMovement Speed: 4 stars\nStamina: 4 stars\nStealth: 3 stars\nExtraction Speed: 2 stars\nScout!(Active): This Toon can sniff out items across the map, causing items to be highlighted for all Toons for 10 seconds. Has a cooldown of 100\n"],
+         ["Ginger","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 2 stars\nStamina: 3 stars\nStealth: 4 stars\nExtraction Speed: 3 stars\nBaked with Care!(Active): This Toon can give one of her own Hearts to heal a targeted Toon. Cannot be used when at 1 Heart. Has a Cooldown of 100\n"],
+         ["Rudie","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 3 stars\nStamina: 3 stars\nStealth: 3 stars\nExtraction Speed: 3 stars\nAntler Charge(Active): This Toon uses his antlers to quickly charge forward in a short burst, increasing his movement speed for 0.4 seconds. Has a Cooldown of 23\n"],
+    ];
+    const toonsinfo = new Map(info);
+    toonpick = prompt("What Toon do you want info on? (Make sure to capatalize their names!)").toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    if (toonpick === "Razzle And Dazzle" || toonpick === "Razzle & Dazzle" || toonpick === "Razdaz" || toonpick === "Raz Daz"){
+        alert("Razzle & Dazzle" + "\n" + toonsinfo.get("Razzle & Dazzle"));
+    }
+
+    else if (toonpick === "Flutter" || toonpick === "Flutters"){
+        alert("Flutter" + "\n" + toonsinfo.get("Flutter"));
+    }
+
+    else if (toonsinfo.has(toonpick)){
+        alert(toonpick + "\n" + toonsinfo.get(toonpick));
+    }
+    else{
+        alert("Shrimpo, my favourite Shrimp. Was your hand a little shaky, do you need professional help? Maybe you forgot your capatalization? Whatever it may be, one thing is for certain, you're getting bullied (Ironic, isn't it?)")
+    }
+}
 
