@@ -711,7 +711,10 @@ function revtwisteds(){
 function toons(){
     
     toonpick = prompt("What Toon do you want info on?").toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-    if (toonpick === "Razzle And Dazzle" || toonpick === "Razzle & Dazzle" || toonpick === "Razdaz" || toonpick === "Raz Daz"){
+    if (toonpick === null || toonpick === ""){
+        return;
+    }
+    else if (toonpick === "Razzle And Dazzle" || toonpick === "Razzle & Dazzle" || toonpick === "Razdaz" || toonpick === "Raz Daz"){
         alert("Razzle & Dazzle" + "\n" + toonsinfo.get("Razzle & Dazzle"));
     }
 
@@ -729,7 +732,10 @@ function toons(){
 function twistedinfo(){
     let twistedcapcheck = prompt("What Toon do you want info on? (Make sure to capatalize their names!)");
     let twistedpick = twistedcapcheck.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-    if (twistedpick === "Razzle And Dazzle" || twistedpick === "Twisted Razzle And Dazzle" || twistedpick === "Razzle & Dazzle" || twistedpick === "Twisted Razzle & Dazzle" || twistedpick === "Razdaz" || twistedpick === "Twisted Razdaz" || twistedpick === "Raz Daz" || twistedpick === "Twisted Raz Daz"){
+    if (twistedpick === null || twistedpick === ""){
+        return;
+    }
+    else if (twistedpick === "Razzle And Dazzle" || twistedpick === "Twisted Razzle And Dazzle" || twistedpick === "Razzle & Dazzle" || twistedpick === "Twisted Razzle & Dazzle" || twistedpick === "Razdaz" || twistedpick === "Twisted Razdaz" || twistedpick === "Raz Daz" || twistedpick === "Twisted Raz Daz"){
         alert("Twisted Razzle & Dazzle" + "\n" + twistedsinfo.get("Twisted Razzle & Dazzle"));
     }
 
