@@ -1,5 +1,4 @@
 //var run = true;
-let twistedcheck = "boxtencosmoyattapoppylooeyshrimpotishabrightneyconniefinnrazzle&dazzlerazzleanddazzlerodgerteagantoodlesflutterfluttersgigiglistengoobscrapsastropebbleveeshellysproutdandyrudiegingercoalbobette"
 let pinfo = [//Normal toons
     ["Boxten","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 3 stars\nStamina: 3 stars\nStealth: 3 stars\nExtraction Speed: 3 stars\nWindup(Passive): This Toon gains 6% more Extraction Speed for every alive Toon in the round. Maxes at 48%.\n"],
     ["Brightney","Health: 3 stars\nSkill Check: 3 stars\nMovement Speed: 3 stars\nStamina: 4 stars\nStealth: 1 stars\nExtraction Speed: 4 stars\nNight Light(Active): This Toon can shine lights on Twisteds to make them visible during Blackouts for 8 seconds. Has a Cooldown of 45.\n"],
@@ -771,5 +770,354 @@ function twistedinfo(){
             }
         }
         }
+}
+function machines(){
+    let player = prompt("How many Alive players on the floor?");
+    if (isNaN(player) === false && player !== null && player !== ""){
+        if (player % 1 !== 0){
+            alert("I see you're trying to break my program Shrimpo, well let me help you, I'll break it for you.");
+            window.location.href = "https://www.bing.com/search?pglt=41&q=local+therapists+office+near+me+for+shrimps+with+anger+issues&cvid=a29b55b647a746b18c21f6988256656e&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCTE3NzM1ajBqMagCALACAA&FORM=ANNTA1&PC=U531";
+            return;
+        }
+        else{
+            player = parseInt(player);
+        }
+    }
+    else if (player === null || player === ""){
+        return;
+    }
+    else{
+        alert("Oh Shrimpo, master of literature, rookie at basic reading. Look man, if you can't type a simple whole number, you don't deserve to even use this program");
+        window.location.href = "https://www.bing.com/search?pglt=41&q=local+therapists+office+near+me+for+shrimps+with+anger+issues&cvid=a29b55b647a746b18c21f6988256656e&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCTE3NzM1ajBqMagCALACAA&FORM=ANNTA1&PC=U531";
+        return;
+    }
+    if (player <= 0 || player > 8){
+        alert("Shrimpo my man (or women I'm not sexist), have you ever played the game? The max amount of players is 8. Also, you can't play the games with 0 players or less, which is kinda obvious.");
+        return;
+    }
+    let floor = prompt("What floor number do you want to calculate for?");
+    if (isNaN(floor) === false && floor !== null && floor !== ""){
+        if (floor % 1 !== 0){
+            alert("I see you're trying to break my program Shrimpo, well let me help you, I'll break it for you.");
+            window.location.href = "https://www.bing.com/search?pglt=41&q=local+therapists+office+near+me+for+shrimps+with+anger+issues&cvid=a29b55b647a746b18c21f6988256656e&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCTE3NzM1ajBqMagCALACAA&FORM=ANNTA1&PC=U531";
+            return;
+        }
+        else{
+            floor = parseInt(floor);
+        }
+    }
+    else if (floor === null || floor === ""){
+        return;
+    }
+    else{
+        alert("Oh Shrimpo, master of literature, rookie at basic reading. Look man, if you can't type a simple whole number, you don't deserve to even use this program");
+        window.location.href = "https://www.bing.com/search?pglt=41&q=local+therapists+office+near+me+for+shrimps+with+anger+issues&cvid=a29b55b647a746b18c21f6988256656e&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCTE3NzM1ajBqMagCALACAA&FORM=ANNTA1&PC=U531";
+        return;
+    }
+    if (floor <= 0){
+        alert("Shrimpo, do you need a therapist? You literally cannot go below floor 1 you dingus.");
+        return;
     }
 
+    let machine = 0
+
+    // 1 Players
+    if (player === 1){
+        if (floor <= 7){
+            machine = 4
+        }
+
+        else if (floor <= 12){
+            machine = 5
+        }
+
+        else if (floor <= 16){
+            machine = 6
+        }
+
+        else if (floor <= 21){
+            machine = 7
+        }
+
+        else if (floor <= 25){
+            machine = 8
+        }
+
+        else if (floor <= 30){
+            machine = 9
+        }
+
+        else if (floor <= 34){
+            machine = 10
+        }
+
+        else if (floor <= 38){
+            machine = 11
+        }
+
+        else if (floor <= 43){
+            machine = 12
+        }
+
+        else if (floor <= 47){
+            machine = 13
+        }
+
+        else if (floor <= 52){
+            machine = 14
+        }
+
+        else if (floor <= 56){
+            machine = 15
+        }
+
+        else if (floor <= 61){
+            machine = 16
+        }
+
+        else if (floor <= 65){
+            machine = 17
+        }
+
+        else if (floor <= 70){
+            machine = 18
+        }
+
+        else if (floor <= 74){
+            machine = 19
+        }
+
+        else{
+            machine = 20
+        }
+
+    }
+
+    if (player === 2){
+        if (floor <= 6){
+            machine = 4
+        }
+
+        else if (floor <= 10){
+            machine = 5
+        }
+
+        else if (floor <= 14){
+            machine = 6
+        }
+
+        else if (floor <= 18){
+            machine = 7
+        }
+
+        else if (floor <= 22){
+            machine = 8
+        }
+
+        else if (floor <= 26){
+            machine = 9
+        }
+
+        else if (floor <= 30){
+            machine = 10
+        }
+
+        else if (floor <= 34){
+            machine = 11
+        }
+
+        else if (floor <= 38){
+            machine = 12
+        }
+
+        else if (floor <= 42){
+            machine = 13
+        }
+
+        else if (floor <= 46){
+            machine = 14
+        }
+
+        else if (floor <= 50){
+            machine = 15
+        }
+
+        else if (floor <= 54){
+            machine = 16
+        }
+
+        else if (floor <= 58){
+            machine = 17
+        }
+
+        else if (floor <= 62){
+            machine = 18
+        }
+
+        else if (floor <= 66){
+            machine = 19
+        }
+
+        else {
+            machine = 20
+        }
+    }
+
+    if (player === 3){
+        if (floor <= 5){
+            machine = 4
+        }
+
+        else if (floor <= 9){
+            machine = 5
+        }
+
+        else if (floor <= 13){
+            machine = 6
+        }
+
+        else if (floor <= 16){
+            machine = 7
+        }
+
+        else if (floor <= 20){
+            machine = 8
+        }
+
+        else if (floor <= 23){
+            machine = 9
+        }
+
+        else if (floor <= 27){
+            machine = 10
+        }
+
+        else if (floor <= 30){
+            machine = 11
+        }
+
+        else if (floor <= 34){
+            machine = 12
+        }
+
+        else if (floor <= 37){
+            machine = 13
+        }
+
+        else if (floor <= 41){
+            machine = 14
+        }
+
+        else if (floor <= 45){
+            machine = 15
+        }
+
+        else if (floor <= 49){
+            machine = 16
+        }
+
+        else if (floor <= 52){
+            machine = 17
+        }
+
+        else if (floor <= 56){
+            machine = 18
+        }
+
+        else if (floor <= 59){
+            machine = 19
+        }
+
+        else {
+            machine = 20
+        }
+    }
+
+    if (player === 4){
+        if (floor <= 5){
+            machine = 4
+        }
+
+        else if (floor <= 8){
+            machine = 5
+        }
+
+        else if (floor <= 12){
+            machine = 6
+        }
+
+        else if (floor <= 15){
+            machine = 7
+        }
+
+        else if (floor <= 19){
+            machine = 8
+        }
+
+        else if (floor <= 21){
+            machine = 9
+        }
+
+        else if (floor <= 24){
+            machine = 10
+        }
+
+        else if (floor <= 27){
+            machine = 11
+        }
+
+        else if (floor <= 30){
+            machine = 12
+        }
+
+        else if (floor <= 33){
+            machine = 13
+        }
+
+        else if (floor <= 37){
+            machine = 14
+        }
+
+        else if (floor <= 40){
+            machine = 15
+        }
+
+        else if (floor <= 43){
+            machine = 16
+        }
+
+        else if (floor <= 46){
+            machine = 17
+        }
+
+        else if (floor <= 49){
+            machine = 18
+        }
+
+        else if (floor <= 52){
+            machine = 19
+        }
+
+        else {
+            machine = 20
+        }
+    }
+
+    if (player === 5){
+
+    }
+
+    if (player === 6){
+
+    }
+
+    if (player === 7){
+
+    }
+
+    if (player === 8){
+
+    }
+
+    alert("There are " + machine + " Machines on floor " + floor)
+}
